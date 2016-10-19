@@ -1,4 +1,14 @@
-Contains .txt file with install instructions, the main file structure and config files
+Contains:
+
+    *install instructions for :
+
+        ReactJS
+
+        Webpack
+
+    *main ReactJS project file structure,
+    
+    *configuration files for ReactJS and Webpack.
 
 Requirements are:
 
