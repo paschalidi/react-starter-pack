@@ -23,22 +23,28 @@ class Button extends React.Component {
     }
 
     componentWillMount() {
-        console.log('will')
+        this.setState({m: 2})
     }
 
     componentDidMount() {
+        //here you call functions like initialisers for this component
+        //this.initialiser(){
+        // ...blah blah...
+        //}
         console.log('did')
     }
 
     componentWillUnmount() {
+        //here you clean these initialisers
+        //clearInterval(this.initialiser)
         console.log('bye')
     }
 
     render() {
-        console.log('rendering')
+        console.log(this.state)
         return (
             <div>
-                <button onClick={this.update}>{this.state.val}</button>
+                <button onClick={this.update}>{this.state.val * this.state.m}</button>
                 <div > {this.props.state}</div>
             </div>
         );
